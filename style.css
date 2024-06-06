@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+p,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+
+.main_con {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 150px; */
+  max-width: 1000px;
+  /* border-radius: 30px; */
+  /* padding: 150px; */
+  margin: 150px auto;
+}
+
+/* media Query for main_con from 500px to 0px  */
+@media (max-width: 500px) {
+  .main_con {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+    margin: 100px 20px;
+    /* margin-left: 20px; */
+  }
+}
+
+.card_1 {
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border-radius: 2px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card_1 p {
+  /* padding-right: 15px; */
+  /* margin-left: 10px; */
+  font-size: 15px;
+}
+
+.card_1 div button {
+  background-color: white;
+  color: var(--bright-orange);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  /* margin-left: 30px; */
+  border: none;
+}
+
+.card_1 div button:hover {
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+}
+
+/* media Query for card_1 from 500px to 0px  */
+
+@media (max-width: 500) {
+  .card_1 {
+    padding-right: 100px;
+  }
+}
+
+.card_2 {
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+}
+
+.card_2 h2 {
+  /* margin-top: 20px; */
+  /* margin-right: 50px; */
+  /* margin-left: 30px; */
+  color: var(--transparent-white);
+}
+
+.card_2 p {
+  /* padding-right: 15px; */
+  /* padding-left: 10px; */
+  font-size: 15px;
+}
+
+.card_2 div button {
+  color: var(--dark-cyan);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+  /* margin-bottom: 50px; */
+  /* padding: 10px 10px 10px 10px; */
+  border: none;
+}
+
+.card_2 div button:hover {
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+}
+
+/* media Query for card_2 from 500px to 0px  */
+@media (max-width: 500) {
+
+}
+
+.card_3 {
+  background-color: var(--very-dark-cyan);
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 9px;
+  border-radius: 3px;
+}
+
+.card_3 h2 {
+  color: var(--transparent-white);
+}
+
+.card_3 p {
+  color: var(--transparent-white);
+  /* padding-right: 20px; */
+  /* margin-left: 10px; */
+  font-size: 15px;
+}
+
+.card_3 div button {
+  color: var(--very-dark-cyan);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.card_3 div button:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+}
